@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="31beb925-f60f-4fc7-89eb-3f7159537630" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
     <ignored path="zzevss.github.io.git.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -376,7 +375,14 @@
       <option name="project" value="LOCAL" />
       <updated>1466869103345</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="AddNawBarBootStrap-Jquery">
+      <created>1466869380311</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1466869380311</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -425,7 +431,8 @@
     <MESSAGE value="SecondCommit changes to text" />
     <MESSAGE value="AddNawBarBootStrap" />
     <MESSAGE value="AddNawBarBootStrap-JS" />
-    <option name="LAST_COMMIT_MESSAGE" value="AddNawBarBootStrap-JS" />
+    <MESSAGE value="AddNawBarBootStrap-Jquery" />
+    <option name="LAST_COMMIT_MESSAGE" value="AddNawBarBootStrap-Jquery" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
