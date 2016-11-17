@@ -1,384 +1,94 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>My CV</title>
-	<meta charset=utf-8>
-	
-	<meta name=viewport content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="style.css">
+<!doctype html>
+<html lang="en" data-framework="backbonejs">
+    <head>
+        <meta charset="utf-8">
+        <title>Skils</title>
+        <link rel="stylesheet" href="dist/css/styles.css">
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    </head>
+    <body>
 
-	<<script src="JS/jquery.min.js"></script>
+        <div class="container skills">
 
-	<script   src="JS/bootstrap.min.js"></script>
+            <!-- block for adding new skill -->
+            <div class="row">
+                <section class="col-sm-12 p-x-3 m-y-3 form-inline">
 
-	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+                    <p>
+                        Type skill name and level then press Enter:
+                    </p>
+                    <div class="form-group">
+                        <input type="text" class="form-control enter-skill-name" id="" placeholder="Enter skill name">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control enter-skill-level" id="" placeholder="Enter skill's level">
+                    </div>
 
-</head>
-	<body>
-	  <nav class="navbar navbar-default">
-	  <div class="container-fluid">
-	    <!-- Brand and toggle get grouped for better mobile display -->
-	    <div class="navbar-header">
-	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-	        <span class="sr-only">Toggle navigation</span>
-	        <span class="icon-bar"></span>
-	        <span class="icon-bar"></span>
-	        <span class="icon-bar"></span>
-	      </button>
-	      <a class="navbar-brand" href="#">VKT</a>
-	    </div>
+                </section>
+            </div>
 
-	    <!-- Collect the nav links, forms, and other content for toggling -->
-	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-	      <ul class="nav navbar-nav">
-	        <li class="active"><a href="#">First Link <span class="sr-only">(current)</span></a></li>
-	        <li><a href="#">Second Link</a></li>
-	        <li class="dropdown">
-	          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-	          <ul class="dropdown-menu">
-	            <li><a href="#">Action</a></li>
-	            <li><a href="#">Another action</a></li>
-	            <li><a href="#">Something else here</a></li>
-	            <li role="separator" class="divider"></li>
-	            <li><a href="#">Separated link</a></li>
-	            <li role="separator" class="divider"></li>
-	            <li><a href="#">One more separated link</a></li>
-	          </ul>
-	        </li>
-	      </ul>
-	      <form class="navbar-form navbar-left" role="search">
-	        <div class="form-group">
-	          <input type="text" class="form-control" placeholder="Search">
-	        </div>
-	        <button type="submit" class="btn btn-default">Submit</button>
-	      </form>
-	      <ul class="nav navbar-nav navbar-right">
-	        <li><a href="#">Link</a></li>
-	        <li class="dropdown">
-	          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-	          <ul class="dropdown-menu">
-	            <li><a href="#">Action</a></li>
-	            <li><a href="#">Another action</a></li>
-	            <li><a href="#">Something else here</a></li>
-	            <li role="separator" class="divider"></li>
-	            <li><a href="#">Separated link</a></li>
-	          </ul>
-	        </li>
-	      </ul>
-	    </div><!-- /.navbar-collapse -->
-	  </div><!-- /.container-fluid -->
-	</nav>
-
-	<div class="container">
-			<div class="row info" style="text-align:center;">
-			    <div class="col-xs-12 alert alert-info">
-			        The skills meter from <a class="alert-link" href="http://bootsnipp.com/snippets/featured/progress-bar-meter">here</a> is used in this design. 
-			        Feel free to remove this div from the design.
-			    </div>
-			</div>
-
-			<div class="resume">
-			    <header class="page-header">
-			    <h1 class="page-title">Resume of John Doe</h1>
-			    <small> <i class="fa fa-clock-o"></i> Last Updated on: <time>Sunday, October 05, 2014</time></small>
-			  </header>
-			<div class="row">
-			  <div class="col-xs-12 col-sm-12 col-md-offset-1 col-md-10 col-lg-offset-2 col-lg-8">
-			    <div class="panel panel-default">
-			      <div class="panel-heading resume-heading">
-			        <div class="row">
-			          <div class="col-lg-12">
-			            <div class="col-xs-12 col-sm-4">
-			              <figure>
-			                <img class="img-circle img-responsive" alt="" src="http://placehold.it/300x300">
-			              </figure>
-			              
-			              <div class="row">
-			                <div class="col-xs-12 social-btns">
-			                  
-			                    <div class="col-xs-3 col-md-1 col-lg-1 social-btn-holder">
-			                      <a href="#" class="btn btn-social btn-block btn-google">
-			                        <i class="fa fa-google"></i> </a>
-			                    </div>
-			                  
-			                    <div class="col-xs-3 col-md-1 col-lg-1 social-btn-holder">
-			                      <a href="#" class="btn btn-social btn-block btn-facebook">
-			                        <i class="fa fa-facebook"></i> </a>
-			                    </div>
-			                  
-			                    <div class="col-xs-3 col-md-1 col-lg-1 social-btn-holder">
-			                      <a href="#" class="btn btn-social btn-block btn-twitter">
-			                        <i class="fa fa-twitter"></i> </a>
-			                    </div>
-			                  
-			                    <div class="col-xs-3 col-md-1 col-lg-1 social-btn-holder">
-			                      <a href="#" class="btn btn-social btn-block btn-linkedin">
-			                        <i class="fa fa-linkedin"></i> </a>
-			                    </div>
-			                  
-			                    <div class="col-xs-3 col-md-1 col-lg-1 social-btn-holder">
-			                      <a href="#" class="btn btn-social btn-block btn-github">
-			                        <i class="fa fa-github"></i> </a>
-			                    </div>
-			                  
-			                    <div class="col-xs-3 col-md-1 col-lg-1 social-btn-holder">
-			                      <a href="#" class="btn btn-social btn-block btn-stackoverflow">
-			                        <i class="fa fa-stack-overflow"></i> </a>
-			                    </div>
-			                  
-			                </div>
-			              </div>
-			              
-			            </div>
-
-			            <div class="col-xs-12 col-sm-8">
-			              <ul class="list-group">
-			                <li class="list-group-item">John Doe</li>
-			                <li class="list-group-item">Software Engineer</li>
-			                <li class="list-group-item">Google Inc. </li>
-			                <li class="list-group-item"><i class="fa fa-phone"></i> 000-000-0000 </li>
-			                <li class="list-group-item"><i class="fa fa-envelope"></i> john@example.com</li>
-			              </ul>
-			            </div>
-			          </div>
-			        </div>
-			      </div>
-			      <div class="bs-callout bs-callout-danger">
-			        <h4>Summary</h4>
-			        <p>
-			         Lorem ipsum dolor sit amet, ea vel prima adhuc, scripta liberavisse ea quo, te vel vidit mollis complectitur. Quis verear mel ne. Munere vituperata vis cu, 
-			         te pri duis timeam scaevola, nam postea diceret ne. Cum ex quod aliquip mediocritatem, mei habemus persecuti mediocritatem ei.
-			        </p>
-			        <p>
-			            Odio recteque expetenda eum ea, cu atqui maiestatis cum. Te eum nibh laoreet, case nostrud nusquam an vis. 
-			            Clita debitis apeirian et sit, integre iudicabit elaboraret duo ex. Nihil causae adipisci id eos.
-
-			        </p>
-			      </div>
-			      <div class="bs-callout bs-callout-danger">
-			        <h4>Research Interests</h4>
-			        <p>
-			          Software Engineering, Machine Learning, Image Processing,
-			          Computer Vision, Artificial Neural Networks, Data Science,
-			          Evolutionary Algorithms.
-			        </p>
-			      </div>
-
-			      <div class="bs-callout bs-callout-danger">
-			        <h4>Prior Experiences</h4>
-			        <ul class="list-group">
-			          <a class="list-group-item inactive-link" href="#">
-			            <h4 class="list-group-item-heading">
-			              Software Engineer at Twitter
-			            </h4>
-			            <p class="list-group-item-text">
-			              Lorem ipsum dolor sit amet, ea vel prima adhuc, scripta liberavisse ea quo, te vel vidit mollis complectitur. Quis verear mel ne. Munere vituperata vis cu, 
-			         te pri duis timeam scaevola, nam postea diceret ne. Cum ex quod aliquip mediocritatem, mei habemus persecuti mediocritatem ei.
-			            </p>
-			          </a>
-			          <a class="list-group-item inactive-link" href="#">
-			            <h4 class="list-group-item-heading">Software Engineer at LinkedIn</h4>
-			            <p class="list-group-item-text">
-			              Lorem ipsum dolor sit amet, ea vel prima adhuc, scripta liberavisse ea quo, te vel vidit mollis complectitur. 
-			              Quis verear mel ne. Munere vituperata vis cu, te pri duis timeam scaevola, 
-			              nam postea diceret ne. Cum ex quod aliquip mediocritatem, mei habemus persecuti mediocritatem ei.
-			                </p><ul>
-			                  <li>
-			                 Lorem ipsum dolor sit amet, ea vel prima adhuc, scripta liberavisse ea quo, te vel vidit mollis complectitur. 
-			              Quis verear mel ne. Munere vituperata vis cu, te pri duis timeam scaevola, 
-			              nam postea diceret ne. Cum ex quod aliquip mediocritatem, mei habemus persecuti mediocritatem ei.
-			                  </li>
-			                  <li>
-			                 Lorem ipsum dolor sit amet, ea vel prima adhuc, scripta liberavisse ea quo, te vel vidit mollis complectitur. 
-			              Quis verear mel ne. Munere vituperata vis cu, te pri duis timeam scaevola, 
-			              nam postea diceret ne. Cum ex quod aliquip mediocritatem, mei habemus persecuti mediocritatem ei.
-			                  </li>
-			                </ul>
-			            <p></p>
-			          </a>
-			        </ul>
-			      </div>
-			      <div class="bs-callout bs-callout-danger">
-			        <h4>Key Expertise</h4>
-			        <ul class="list-group">
-			          <li class="list-group-item"> Lorem ipsum dolor sit amet, ea vel prima adhuc </li>
-			          <li class="list-group-item"> Lorem ipsum dolor sit amet, ea vel prima adhuc</li>
-			          <li class="list-group-item"> Lorem ipsum dolor sit amet, ea vel prima adhuc</li>
-			          <li class="list-group-item"> Lorem ipsum dolor sit amet, ea vel prima adhuc</li>
-			          <li class="list-group-item">Lorem ipsum dolor sit amet, ea vel prima adhuc</li>
-			          <li class="list-group-item"> Lorem ipsum dolor sit amet, ea vel prima adhuc</li>
+            <!-- list of skills -->
+            <div class="row">
+                <div class="col-sm-12 p-x-3">
+                    <section class="main invisible ">
+                        <h5 class="text-primary">
+                            List of added skills:
+                        </h5>
+                        <ul class="skills-list list-unstyled">
+                            <li class="">
+                                <div class="row">
+                                    <div class="col-sm-4">
+                                        <small class="text-muted">
+                                            Skill Name
+                                        </small>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <small class="text-muted">
+                                            Skill Level
+                                        </small>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        
+                        <footer class="row">
+                            <section class="col-sm-2 p-x-3 m-b-2">
+                                <button type="submit" class="btn btn-danger clear-skills ">Remove all skills</button>
+                            </section>
+                            <section class="col-sm-3 p-x-3 m-b-2">
+                                <button type="submit" class="btn btn-primary  show-graph ">Show graph of level skill</button>
+                            </section>
+                        </footer>
+                    </section>
+                </div>
+            </div>
 
 
+        </div>
 
-			        </ul>
-			      </div>
-			      <div class="bs-callout bs-callout-danger">
-			        <h4>Language and Platform Skills</h4>
-			        <ul class="list-group">
-			          <a class="list-group-item inactive-link" href="#">
-			            
+        <!-- one skill template -->
+        <script type="text/template" id="skill-item-template">
+            <div class="row">
+                <div class="col-sm-4 info-block">
+                    <label><%- skillName %></label>
+                    <input class="edit" data-name="skillName" value="<%- skillName %>">
+                </div>
+                <div class="col-sm-3 info-block">
+                    <label><%- skillLevel %></label>
+                    <input class="edit" data-name="skillLevel" value="<%- skillLevel %>">
+                </div>
+            </div>
+        </script>
 
-			            <div class="progress">
-			              <div data-placement="top" style="width: 80%;" 
-			              aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" role="progressbar" class="progress-bar progress-bar-success">
-			                <span class="sr-only">80%</span>
-			                <span class="progress-type">Java/ JavaEE/ Spring Framework </span>
-			              </div>
-			            </div>
-			            <div class="progress">
-			              <div data-placement="top" style="width: 70%;" aria-valuemax="100" aria-valuemin="0" aria-valuenow="1" role="progressbar" class="progress-bar progress-bar-success">
-			                <span class="sr-only">70%</span>
-			                <span class="progress-type">PHP/ Lamp Stack</span>
-			              </div>
-			            </div>
-			            <div class="progress">
-			              <div data-placement="top" style="width: 70%;" aria-valuemax="100" aria-valuemin="0" aria-valuenow="1" role="progressbar" class="progress-bar progress-bar-success">
-			                <span class="sr-only">70%</span>
-			                <span class="progress-type">JavaScript/ NodeJS/ MEAN stack </span>
-			              </div>
-			            </div>
-			            <div class="progress">
-			              <div data-placement="top" style="width: 65%;" aria-valuemax="100" aria-valuemin="0" aria-valuenow="1" role="progressbar" class="progress-bar progress-bar-warning">
-			                <span class="sr-only">65%</span>
-			                <span class="progress-type">Python/ Numpy/ Scipy</span>
-			              </div>
-			            </div>
-			            <div class="progress">
-			              <div data-placement="top" style="width: 60%;" aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" role="progressbar" class="progress-bar progress-bar-warning">
-			                <span class="sr-only">60%</span>
-			                <span class="progress-type">C</span>
-			              </div>
-			            </div>
-			            <div class="progress">
-			              <div data-placement="top" style="width: 50%;" aria-valuemax="100" aria-valuemin="0" aria-valuenow="50" role="progressbar" class="progress-bar progress-bar-warning">
-			                <span class="sr-only">50%</span>
-			                <span class="progress-type">C++</span>
-			              </div>
-			            </div>
-			            <div class="progress">
-			              <div data-placement="top" style="width: 10%;" aria-valuemax="100" aria-valuemin="0" aria-valuenow="50" role="progressbar" class="progress-bar progress-bar-danger">
-			                <span class="sr-only">10%</span>
-			                <span class="progress-type">Go</span>
-			              </div>
-			            </div>
-
-			            <div class="progress-meter">
-			              <div style="width: 25%;" class="meter meter-left"><span class="meter-text">I suck</span></div>
-			              <div style="width: 25%;" class="meter meter-left"><span class="meter-text">I know little</span></div>
-			              <div style="width: 30%;" class="meter meter-right"><span class="meter-text">I'm a guru</span></div>
-			              <div style="width: 20%;" class="meter meter-right"><span class="meter-text">I''m good</span></div>
-			            </div>
-
-			          </a>
-
-			        </ul>
-			      </div>
-			      <div class="bs-callout bs-callout-danger">
-			        <h4>Education</h4>
-			        <table class="table table-striped table-responsive ">
-			          <thead>
-			            <tr><th>Degree</th>
-			            <th>Graduation Year</th>
-			            <th>CGPA</th>
-			          </tr></thead>
-			          <tbody>
-			            <tr>
-			              <td>Masters in Computer Science and Engineering</td>
-			              <td>2014</td>
-			              <td> 3.50 </td>
-			            </tr>
-			            <tr>
-			              <td>BSc. in Computer Science and Engineering</td>
-			              <td>2011</td>
-			              <td> 3.25 </td>
-			            </tr>
-			          </tbody>
-			        </table>
-			      </div>
-
-<!-- 					<div class="form-wrapper">
-						<form>
-						  Email:<br>
-						  <input type="text" name="email"><br>
-						  Select value:<br>
-						  <select>
-						   <option>github.com</option>
-						   <option>gitlab.com</option>
-						   <option>mega.nz</option>
-						  </select>
-						  <input type="file" name="fileToUpload" id="fileToUpload">
-						  <input type="submit" value="Send Data">
-
-						</form>
-					</div>
- -->
-<!--  					<div class="container"> -->
-					<div class="col-md-6 col-md-offset-3">
-					    <div class="form-area">  
-					        <form role="form" method="get" name="contact" action="#">
-					        <br>
-					                    <h3 >Contact Form</h3>
-					    				<div class="form-group">
-											<input type="text" class="form-control" id="name" name="name" placeholder="Name" required>
-										</div>
-										<div class="form-group">
-											<input type="text" class="form-control" id="email" name="email" placeholder="Email" required>
-										</div>
-										<div class="form-group">
-											<input type="text" class="form-control" id="mobile" name="mobile" placeholder="Mobile Number" required>
-										</div>
-										<div class="form-group">
-											<input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" required>
-										</div>
-					                    <div class="form-group">
-					                    <textarea class="form-control" type="textarea" id="message" placeholder="Message" maxlength="140" rows="7"></textarea>
-					                        <span class="help-block"><p id="characterLeft" class="help-block ">You have reached the limit</p></span>                    
-					                    </div>
-					            
-					        <button type="button" id="submit" name="submit" class="btn btn-primary pull-right">Submit Form</button>
-					        </form>
-					    </div>
-						<!-- </div> -->
-						</div>
-
-			    </div>
-
-			  </div>
-			</div>
-			    
-			</div>
-
-	</div>
-
-</body>
-
-<footer class="nb-footer">
-
-
-
-
-
-<section class="copyright">
-<div class="container">
-<div class="row">
-<div class="col-sm-6">
-	<div class="social-media">
-		<ul class="list-inline">
-			<li><a href="http://www.nextbootstrap.com/" title=""><i class="fa fa-facebook"></i></a></li>
-			<li><a href="http://www.nextbootstrap.com/" title=""><i class="fa fa-twitter"></i></a></li>
-			<li><a href="http://www.nextbootstrap.com/" title=""><i class="fa fa-google-plus"></i></a></li>
-			<li><a href="http://www.nextbootstrap.com/" title=""><i class="fa fa-linkedin"></i></a></li>
-		</ul>
-	</div>
-</div>
-<div class="col-sm-6">
-	
-</div>
-</div>
-</div>
-</section>
-</footer>
+        <script src="node_modules/jquery/dist/jquery.js"></script>
+        <script src="node_modules/underscore/underscore.js"></script>
+        <script src="node_modules/backbone/backbone.js"></script>
+        <script src="node_modules/backbone.localstorage/backbone.localStorage.js"></script>
+        <script src="dist/js/skillModel.js"></script>
+        <script src="dist/js/skillsListCollection.js"></script>
+        <script src="dist/js/appView.js"></script>
+        <script src="dist/js/skillView.js"></script>
+        <script src="dist/js/routers.js"></script>
+        <script src="dist/js/app.js"></script>
+    </body>
 </html>
-
-
-
