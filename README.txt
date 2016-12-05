@@ -1,34 +1,27 @@
-Solid State by HTML5 UP
-html5up.net | @ajlkn
-Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+Note
+====
+Theme Information	
+Neu Proflie, is created to suit a profissional Webdesigner, Web UI Developer, UX/UI Developer, Programmer's portfolio. This is a clean responsive web design template you can use for personal portfolio’s websites to show case your work and resume and more. This template is built on Bootstrap framework which give flexibilty to customeise the theme easly as per the user requirements. All latest technology HTML5 CSS3, jQuery and bootstrap.
+
+Key features
+Twitter Bootstrap 3.1.1
+Valid HTML5 & CSS3
+FontAwesome Icons
+Portfolio and Pricing Table
+Gmap
+Contact Form
+
+Responsive, Bootstrap Mobile First Web Template
+ 
+Author URI: http://webthemez.com/
+
+License: Free to use for personal and commercial, but you need to place back link in the bottom of the template(Template by: webthemez.com).
 
 
-After a somewhat extended break from HTML5 UP (to work on a secret-ish new project --
-more on that later!) I'm back with a brand new design: Solid State, a slick new multi-
-pager that combines some of the ideas I've played with over at Pixelarity with an "angular"
-sort of look. Hope you dig it :)
+Credits
+=======
+Framework  http://getbootstrap.com
+Images	Unsplash (http://unsplash.com - CC0 licensed) 
+Icons	Font Awesome (http://fortawesome.github.com/Font-Awesome/)
+Other	html5shiv.js (@afarkas @jdalton @jon_neal @rem)
 
-Demo images* courtesy of Unsplash, a radtastic collection of CC0 (public domain) images
-you can use for pretty much whatever.
-
-(* = not included)
-
-AJ
-aj@lkn.io | @ajlkn
-
-
-Credits:
-
-	Demo Images:
-		Unsplash (unsplash.com)
-
-	Icons:
-		Font Awesome (fortawesome.github.com/Font-Awesome)
-
-	Other:
-		jQuery (jquery.com)
-		html5shiv.js (@afarkas @jdalton @jon_neal @rem)
-		background-size polyfill (github.com/louisremi)
-		Misc. Sass functions (@HugoGiraudel)
-		Respond.js (j.mp/respondjs)
-		Skel (skel.io)
